@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Event Management - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Campus Events</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 id="main-heading">Welcome to Campus Event Management</h1>
+        <p>Your ultimate portal to discover, track, and register for college technical and cultural events seamlessly.</p>
+
+        <!-- Interactive Buttons for Home Page -->
+        <div class="button-group">
+            <button onclick="changeHeading()">Change Heading</button>
+            <button onclick="toggleCardColor()">Change Card Color</button>
+            <button onclick="toggleHighlights()">Show/Hide Highlights</button>
+        </div>
+
+        <!-- Upcoming Event Cards -->
+        <h2>Upcoming Events</h2>
+        <div class="card-container">
+            <div class="card event-card">
+                <h3>Tech Hackathon 2026</h3>
+                <p>Date: Nov 10, 2026</p>
+                <p>Build innovative coding solutions in 24 hours.</p>
+            </div>
+            <div class="card event-card">
+                <h3>Annual Cultural Fest</h3>
+                <p>Date: Nov 18, 2026</p>
+                <p>Enjoy music, dance, and dramatic arts performances.</p>
+            </div>
+            <div class="card event-card">
+                <h3>RoboWars Competition</h3>
+                <p>Date: Nov 25, 2026</p>
+                <p>Witness ultimate mechanical showdowns in the arena.</p>
+            </div>
+        </div>
+
+        <!-- Highlights Section to Show/Hide -->
+        <div id="highlights-section">
+            <h2>Event Highlights</h2>
+            <p>Last year's fest witnessed over 40+ college participation entries and ₹50,000+ in prize pools!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
