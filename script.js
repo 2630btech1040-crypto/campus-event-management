@@ -1,19 +1,20 @@
-// --- PAGE 1: Home Page Interactions ---
+// --- PAGE 1: Home Interactions ---
 function changeHeading() {
     const heading = document.getElementById("main-heading");
     if (heading) {
-        heading.textContent = "Explore Exciting College Events!";
+        heading.textContent = "⚡ Nexus '26: Innovation Unleashed!";
     }
 }
 
 function toggleCardColor() {
     const cards = document.querySelectorAll(".event-card");
     cards.forEach(card => {
-        // Toggle background color style dynamically
-        if (card.style.backgroundColor === "rgb(254, 249, 231)") {
+        if (card.style.backgroundColor === "rgb(26, 47, 75)") {
             card.style.backgroundColor = "";
+            card.style.borderColor = "#2a3d66";
         } else {
-            card.style.backgroundColor = "#fef9e7"; // Soft pastel yellow
+            card.style.backgroundColor = "#1a2f4b";
+            card.style.borderColor = "#00f0ff";
         }
     });
 }
@@ -21,7 +22,6 @@ function toggleCardColor() {
 function toggleHighlights() {
     const highlights = document.getElementById("highlights-section");
     if (highlights) {
-        // Using classList or style display toggle
         if (highlights.style.display === "none") {
             highlights.style.display = "block";
         } else {
@@ -31,47 +31,45 @@ function toggleHighlights() {
 }
 
 
-// --- PAGE 2: Events Page Interactions ---
+// --- PAGE 2: Events Interactions ---
 function addNewEvent() {
     const inputVal = document.getElementById("newEventInput").value;
     const confirmation = document.getElementById("submissionConfirmation");
     const displayArea = document.getElementById("dynamicEventDisplay");
 
     if (inputVal.trim() === "") {
-        confirmation.style.color = "#e74c3c";
-        confirmation.textContent = "Please enter a valid event name!";
+        confirmation.style.color = "#ff4d4d";
+        confirmation.textContent = "Error: Event title cannot be empty!";
         return;
     }
 
-    confirmation.style.color = "#27ae60";
-    confirmation.textContent = `Success! Event "${inputVal}" has been submitted.`;
+    confirmation.style.color = "#00ffaa";
+    confirmation.textContent = `Success! Track "${inputVal}" added to queue.`;
 
-    // Display entered event in designated area
     const newParagraph = document.createElement("p");
-    newParagraph.textContent = `Added Event: ${inputVal}`;
+    newParagraph.textContent = `Registered Custom Track: ${inputVal}`;
+    newParagraph.style.color = "#00f0ff";
     newParagraph.style.fontWeight = "bold";
     displayArea.appendChild(newParagraph);
 
-    // Clear input field
     document.getElementById("newEventInput").value = "";
 }
 
 function modifyEventCard() {
     const card1 = document.getElementById("card-1");
     if (card1) {
-        card1.style.border = "2px solid #3498db";
-        card1.style.backgroundColor = "#ebf5fb";
+        card1.style.border = "2px solid #ff007f";
+        card1.style.backgroundColor = "#1f1426";
         const title = card1.querySelector("h3");
         if (title) {
-            title.textContent = "★ Featured: AI & Cloud Workshop";
+            title.textContent = "🔥 [Featured Priority] Cloud Architecture Lab";
         }
     }
 }
 
 
-// --- PAGE 3: Registration Page Interactions ---
+// --- PAGE 3: Registration Interactions ---
 function handleRegistration(event) {
-    // Prevent default form page reload behavior
     event.preventDefault();
 
     const name = document.getElementById("studentName").value.trim();
@@ -81,27 +79,23 @@ function handleRegistration(event) {
     const errorBox = document.getElementById("error-message");
     const confirmBox = document.getElementById("confirmationMessage");
 
-    // Conditional statements for validation
     if (name === "" || roll === "" || email === "" || eventChoice === "") {
-        errorBox.textContent = "Error: Please fill in all required fields before registering.";
+        errorBox.textContent = "Access Denied: Please complete all required form fields.";
         confirmBox.textContent = "";
         return;
     }
 
-    // Clear error message if valid
     errorBox.textContent = "";
-
-    // Display personalized confirmation message
-    confirmBox.textContent = `Thank you, ${name} (Roll No: ${roll})! You have successfully registered for ${eventChoice}.`;
+    confirmBox.textContent = `Access Granted! Welcome ${name} (ID: ${roll}). Your slot for ${eventChoice} is confirmed.`;
 }
 
 function changeHeadingFontSize() {
     const heading = document.getElementById("reg-heading");
     if (heading) {
-        if (heading.style.fontSize === "2rem") {
+        if (heading.style.fontSize === "2.4rem") {
             heading.style.fontSize = "1.5rem";
         } else {
-            heading.style.fontSize = "2rem";
+            heading.style.fontSize = "2.4rem";
         }
     }
 }

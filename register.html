@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Event Management - Register</title>
+    <title>Nexus '26 - Register</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
     <nav>
-        <div class="logo">Campus Events</div>
+        <div class="logo">⚡ NEXUS '26</div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="events.html">Events</a></li>
@@ -19,43 +18,40 @@
     </nav>
 
     <div class="container">
-        <h1 id="reg-heading">Event Registration Portal</h1>
-        <p>Fill out the form below to secure your spot for an upcoming college event.</p>
+        <h1 id="reg-heading">Summit Registration Portal</h1>
+        <p>Secure your pass for the upcoming technical tracks below.</p>
 
-        <!-- Registration Form Container -->
         <div id="form-container">
             <div id="error-message" class="error-msg"></div>
             
             <form id="registrationForm" onsubmit="handleRegistration(event)">
                 <div>
-                    <label for="studentName">Student Name:</label><br>
-                    <input type="text" id="studentName" placeholder="Enter your full name">
+                    <label for="studentName">Participant Name:</label><br>
+                    <input type="text" id="studentName" placeholder="Enter full name">
                 </div>
                 <div>
-                    <label for="rollNumber">Student Roll Number:</label><br>
-                    <input type="text" id="rollNumber" placeholder="Enter roll number">
+                    <label for="rollNumber">Roll Number:</label><br>
+                    <input type="text" id="rollNumber" placeholder="Enter student roll number">
                 </div>
                 <div>
                     <label for="email">Email Address:</label><br>
                     <input type="email" id="email" placeholder="Enter email address">
                 </div>
                 <div>
-                    <label for="eventSelect">Event Selection:</label><br>
+                    <label for="eventSelect">Track Selection:</label><br>
                     <select id="eventSelect">
-                        <option value="">--Select an Event--</option>
-                        <option value="Tech Hackathon 2026">Tech Hackathon 2026</option>
-                        <option value="AI & Cloud Workshop">AI & Cloud Workshop</option>
-                        <option value="Inter-College Quiz">Inter-College Quiz</option>
+                        <option value="">--Select an Event Track--</option>
+                        <option value="Neural Hack 3.0">Neural Hack 3.0</option>
+                        <option value="Cloud Architecture Lab">Cloud Architecture Lab</option>
+                        <option value="Quantum Computing 101">Quantum Computing 101</option>
                     </select>
                 </div>
-                <button type="submit">Register</button>
+                <button type="submit">Submit Registration</button>
             </form>
         </div>
 
-        <!-- Personalized Confirmation Message Output Area -->
         <div id="confirmationMessage" class="success-msg"></div>
 
-        <!-- Extra Controls for Assignment Requirements -->
         <div style="margin-top: 2rem;">
             <button onclick="changeHeadingFontSize()">Toggle Heading Font Size</button>
             <button onclick="toggleRegistrationForm()">Show/Hide Form</button>

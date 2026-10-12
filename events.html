@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Event Management - Events</title>
+    <title>Nexus '26 - Events</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
     <nav>
-        <div class="logo">Campus Events</div>
+        <div class="logo">⚡ NEXUS '26</div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="events.html">Events</a></li>
@@ -19,52 +18,49 @@
     </nav>
 
     <div class="container">
-        <h1>College Events Directory</h1>
-        <p>Explore all scheduled workshops, fests, and competitions below.</p>
+        <h1>Master Event Directory</h1>
+        <p>Browse through all official track events scheduled for the summit.</p>
 
-        <!-- Event Cards (At least 4) -->
         <div class="card-container">
             <div class="card" id="card-1">
-                <h3>AI & Cloud Workshop</h3>
-                <p><strong>Date:</strong> Nov 05, 2026</p>
-                <p><strong>Venue:</strong> Auditorium Hall A</p>
-                <p>Learn foundational AWS cloud deployment patterns.</p>
+                <h3>Cloud Architecture Lab</h3>
+                <p><strong>Date:</strong> Nov 06, 2026</p>
+                <p><strong>Venue:</strong> Innovation Hub - Lab 4</p>
+                <p>Deploy scalable serverless microservices live.</p>
             </div>
             <div class="card">
-                <h3>Web Dev Bootcamp</h3>
-                <p><strong>Date:</strong> Nov 12, 2026</p>
-                <p><strong>Venue:</strong> Computer Lab 2</p>
-                <p>Hands-on session covering HTML, CSS, and modern JS.</p>
+                <h3>UI/UX Design Sprint</h3>
+                <p><strong>Date:</strong> Nov 10, 2026</p>
+                <p><strong>Venue:</strong> Design Studio B</p>
+                <p>Wireframing futuristic interfaces using modern CSS tools.</p>
             </div>
         </div>
 
         <div class="card-container">
             <div class="card">
-                <h3>Inter-College Quiz</h3>
-                <p><strong>Date:</strong> Nov 15, 2026</p>
-                <p><strong>Venue:</strong> Seminar Hall</p>
-                <p>Test your general tech and aptitude knowledge.</p>
+                <h3>Quantum Computing 101</h3>
+                <p><strong>Date:</strong> Nov 18, 2026</p>
+                <p><strong>Venue:</strong> Main Auditorium</p>
+                <p>Introductory seminar on qubit states and algorithms.</p>
             </div>
             <div class="card">
-                <h3>Startup Pitching Day</h3>
-                <p><strong>Date:</strong> Nov 30, 2026</p>
-                <p><strong>Venue:</strong> MBA Block Conference Room</p>
-                <p>Pitch your business models to angel investors.</p>
+                <h3>Startup Launchpad</h3>
+                <p><strong>Date:</strong> Nov 22, 2026</p>
+                <p><strong>Venue:</strong> Incubator Conference Hall</p>
+                <p>Present tech prototypes to seasoned venture capitalists.</p>
             </div>
         </div>
 
-        <!-- Add Event Section -->
-        <h2>Add a New Event</h2>
+        <h2>Register Custom Event Entry</h2>
         <div>
-            <input type="text" id="newEventInput" placeholder="Enter event name...">
+            <input type="text" id="newEventInput" placeholder="Enter custom event title...">
             <button onclick="addNewEvent()">Add Event</button>
         </div>
         <p id="submissionConfirmation" class="success-msg"></p>
         <div id="dynamicEventDisplay"></div>
 
-        <!-- Modify Card Button -->
         <div style="margin-top: 1.5rem;">
-            <button onclick="modifyEventCard()">Highlight First Event Card</button>
+            <button onclick="modifyEventCard()">Highlight Featured Track</button>
         </div>
     </div>
 
