@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Event Management - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Campus Events</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 id="reg-heading">Event Registration Portal</h1>
+        <p>Fill out the form below to secure your spot for an upcoming college event.</p>
+
+        <!-- Registration Form Container -->
+        <div id="form-container">
+            <div id="error-message" class="error-msg"></div>
+            
+            <form id="registrationForm" onsubmit="handleRegistration(event)">
+                <div>
+                    <label for="studentName">Student Name:</label><br>
+                    <input type="text" id="studentName" placeholder="Enter your full name">
+                </div>
+                <div>
+                    <label for="rollNumber">Student Roll Number:</label><br>
+                    <input type="text" id="rollNumber" placeholder="Enter roll number">
+                </div>
+                <div>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" placeholder="Enter email address">
+                </div>
+                <div>
+                    <label for="eventSelect">Event Selection:</label><br>
+                    <select id="eventSelect">
+                        <option value="">--Select an Event--</option>
+                        <option value="Tech Hackathon 2026">Tech Hackathon 2026</option>
+                        <option value="AI & Cloud Workshop">AI & Cloud Workshop</option>
+                        <option value="Inter-College Quiz">Inter-College Quiz</option>
+                    </select>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <!-- Personalized Confirmation Message Output Area -->
+        <div id="confirmationMessage" class="success-msg"></div>
+
+        <!-- Extra Controls for Assignment Requirements -->
+        <div style="margin-top: 2rem;">
+            <button onclick="changeHeadingFontSize()">Toggle Heading Font Size</button>
+            <button onclick="toggleRegistrationForm()">Show/Hide Form</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
