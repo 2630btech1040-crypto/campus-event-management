@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Event Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="register.html">Register</a>
+    </nav>
+
+    <div class="container">
+        <h1 id="main-heading">Welcome to Campus Event Management</h1>
+        <p>This is the official homepage for college events and activities.</p>
+
+        <button onclick="changeHeading()">Change Heading</button>
+        <button onclick="toggleCardColor()">Change Card Color</button>
+        <button onclick="toggleHighlights()">Show/Hide Highlights</button>
+
+        <h2>Upcoming Events</h2>
+        <div class="card event-card">
+            <h3>Tech Fest 2026</h3>
+            <p>Date: Nov 10</p>
+            <p>Annual coding competition.</p>
+        </div>
+        <div class="card event-card">
+            <h3>Music Night</h3>
+            <p>Date: Nov 15</p>
+            <p>Live band performances.</p>
+        </div>
+        <div class="card event-card">
+            <h3>Science Exhibition</h3>
+            <p>Date: Nov 20</p>
+            <p>Student project displays.</p>
+        </div>
+
+        <div id="highlights-section">
+            <h2>Event Highlights</h2>
+            <p>Check out photos and updates from our previous successful college fests!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

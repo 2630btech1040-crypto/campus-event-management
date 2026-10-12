@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events - Campus Event Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="register.html">Register</a>
+    </nav>
+
+    <div class="container">
+        <h1>College Events</h1>
+        <p>Here are the scheduled events for this semester.</p>
+
+        <div class="card" id="card-1">
+            <h3>Coding Workshop</h3>
+            <p>Date: Nov 5</p>
+            <p>Venue: Lab 3</p>
+            <p>Learn basics of web design.</p>
+        </div>
+        <div class="card">
+            <h3>Debate Competition</h3>
+            <p>Date: Nov 8</p>
+            <p>Venue: Hall B</p>
+            <p>Topic: AI in Education.</p>
+        </div>
+        <div class="card">
+            <h3>Robotics Meet</h3>
+            <p>Date: Nov 12</p>
+            <p>Venue: Workshop Area</p>
+            <p>Showcase custom-built robots.</p>
+        </div>
+        <div class="card">
+            <h3>Art Showcase</h3>
+            <p>Date: Nov 19</p>
+            <p>Venue: Activity Room</p>
+            <p>Paintings and sketches by students.</p>
+        </div>
+
+        <h2>Add New Event</h2>
+        <input type="text" id="newEventInput" placeholder="Event name">
+        <button onclick="addNewEvent()">Add Event</button>
+        <p id="submissionConfirmation" class="success-msg"></p>
+        <div id="dynamicEventDisplay"></div>
+
+        <br>
+        <button onclick="modifyEventCard()">Modify First Event</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
